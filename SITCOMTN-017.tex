@@ -16,7 +16,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Patrick Ingraham
+Christopher W. Stubbs
 }
 
 \setDocRef{SITCOMTN-017}
@@ -25,10 +25,10 @@ Patrick Ingraham
 \date{\vcsDate}
 
 % Optional: name of the document's curator
-% \setDocCurator{The Curator of this Document}
+% \setDocCurator{Christopher Stubbs}
 
 \setDocAbstract{%
-A description of the deliverables and timelines for the IQ 
+A description of the deliverables and timelines for the Image Quality Group
 }
 
 % Change history defined here.
@@ -36,7 +36,7 @@ A description of the deliverables and timelines for the IQ
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Patrick Ingraham}
+  \addtohist{1}{2021-08-21}{Unreleased version from C. Stubbs}{Patrick Ingraham}
 }
 
 
@@ -50,12 +50,89 @@ A description of the deliverables and timelines for the IQ
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
 
+\section{Context and Motivation}
+
+The effectiveness of the Rubin Observatory's image stream depends strongly on image quality.
+Both the size and shape of the images formed on the focal plane are factors that influence the system's scientific impact.
+Achieving and sustaining the best possible image quality is therefore essential to having the project reach its full potential.
+
+This technical note outlines the goals, structure, and scope of the effort to characterize, quantify, ameliorate, and monitor sources of PSF degradation for the Rubin observatory systems.
+The 3.5 degree field of view of the camera on the Rubin telescope precludes using adaptive optics to compensate for wavefront errors introduced by the upper atmosphere.
+We therefore expect that atmospheric seeing will provide a fundamental limitation to the best PSF's the system will be able to achieve.
+This effort will strive to achieve the goal of seeing-limited PSF's.
+
+\section{Scope and Deliverables}
+
+This effort will extend from the construction phase of the Rubin observatory through commissioning and into operations.
+The framework for this process entails producing a budget that quantifies the various contributions to image degradations, including:
+\begin{itemize}
+\item upper atmosphere seeing,
+\item ground layer seeing,
+\item mirror and dome seeing,
+\item residual aberrations in the optical system, arising from misalignments and figure errors,
+\item both low-angle scattering and undesired reflections off optical elements,
+\item tracking errors and oscillations in the telescope control system, and
+\item detector and signal chain artifacts.
+\end{itemize}
+
+The team will perform measurements and analyses to track these various contributions to the PSF of the Rubin telescopes.
+The early availability of the Auxiliary Telescope, equipped with a detector and readout electronics identical to those used in the main Rubin camera, provides an opportunity to develop and refine methods for constructing and monitoring the image quality budget.
+
+The scope of this effort includes obtaining and exploiting additional sources of information to tease apart the various contributions to image quality deterioration.
+An important data stream will be delivered by Differential Image Motion Monitors (DIMMs), temperature metrology, and other diagnostic instruments.
+
+Specific deliverables include:
+\begin{enumerate}
+\item Developing and updating an image quality budget for the Auxiliary Telescope, with associated data collection and analysis methods
+\item Deploying seeing monitoring instrumentation in the Auxiliary Telescope,
+\item Developing, documenting, and archiving analysis tools for image quality assessments,
+\item Migrating the methods, tools, and personnel of the Image Quality Group to the main Rubin telescope once it enters the system integration phase,
+\item Developing and updating an image quality budget for the Rubin Telescope, with associated data collection and analysis methods,
+\item Deploying seeing monitoring instrumentation in the Rubin Telescope,
+\item Ensuring that tools and methods are fully documented, and carry forward though the integration, commissioning, and operational phases,
+\item Coordinating efforts from DESC and other non-project scientists and engineers, in the domain of image quality work.
+\end{enumerate}
+
+\section{Timeline and Management Stucture}
+
+The group's initial focus will be on determining the image quality budget for the Auxiliary telescope.
+This will contribute to improving the data quality from Aux Tel, but will also provide an opportunity to have a toolkit of validated methods at the ready once the main Rubin telescope begins early data collection.
+While predicting dates is a challenge given the uncertainties surrounding COVID, the work on Aux Tel will likely occupy mid-calendar-2021 through some time in 2022 when SITCOM activities ramp up on the main telescope.
+
+A target date for obtaining an initial Aux Tel image quality budget is Dec 2021, with the installation of additional in-dome instrumentation in Jan 2022.
+
+The Image Quality Group's work will be coordinated and guided by the group Chair.
+That individual will report to the head of the Rubin SITCOM effort during the commissioning phase, and to the Observatory Chief Engineer during the operations phase of the project.
+The group Chair or their designate will coordinate the image quality work undertaken by external participants and members of science collaborations.
+
+\section{Out-of-Scope Aspects}
+
+The image quality group bears responsibility for identifying and ranking sources of PSF degradation, and recommending steps the project can take to address them.
+The team does is not responsible for carrying out that work.
+These recommendations can include fixes, upgrades, operational changes, monitoring and visualization tools, and additional instrumentation.
+
+\section{Participants}
+
+\begin{itemize}
+\item Chuck Claver, Rubin System Scientist
+\item Erik Dennihy, Rubin Commissioning Scientist
+\item Brodi Elwood, Harvard
+\item Merlin Fisher-Levine, Rubin Data Management whiz
+\item Patrick Ingraham, Rubin Calibration System Engineer
+\item Eske Pedersen, Harvard
+\item Brian Stalder, Rubin Commissioning Scientist
+\item Christopher Stubbs, Harvard
+\item Tony Tyson, UC Davis
+\item Elana Urbach, Harvard
+\end{itemize}
+
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
-\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+%\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
 \section{Acronyms} \label{sec:acronyms}
