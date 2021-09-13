@@ -10,7 +10,7 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{SIT-Com Image Quality Working Group Description}
+\title{SIT-Com Image Quality Team Description}
 
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
@@ -24,11 +24,11 @@ Christopher W. Stubbs
 
 \date{\vcsDate}
 
-% Optional: name of the document's curator
+% Optional: Name of the document's curator
 % \setDocCurator{Christopher Stubbs}
 
 \setDocAbstract{%
-A description of the deliverables and timelines for the Image Quality Group
+A description of the deliverables and timelines for the Image Quality Team
 }
 
 % Change history defined here.
@@ -57,22 +57,23 @@ Both the size and shape of the images formed on the focal plane are factors that
 Achieving and sustaining the best possible image quality is therefore essential to having the project reach its full potential.
 
 This technical note outlines the goals, structure, and scope of the effort to characterize, quantify, ameliorate, and monitor sources of PSF degradation for the Rubin observatory systems.
-The 3.5 degree field of view of the camera on the Rubin telescope precludes using adaptive optics to compensate for wavefront errors introduced by the upper atmosphere.
+The {3.5\textdegree} field-of-view of the camera on the Rubin telescope precludes using adaptive optics to compensate for wavefront errors introduced by the upper atmosphere.
 We therefore expect that atmospheric seeing will provide a fundamental limitation to the best PSF's the system will be able to achieve.
 This effort will strive to achieve the goal of seeing-limited PSF's.
-\href{https://ls.st/LTS-54}{LTS-54} defines the median atmospheric conditions to be used in derivation of image quality budgets and operational constraints.
-This group follows these definitions when defining success but will also suggest mechanisms to possibly exceed requirements.
+\href{https://ls.st/LPM-17}{LTS-17} defines the median atmospheric conditions to be used in derivation of image quality budgets and operational constraints.
+These requirements have been flowed down to \href{https://ls.st/LSE-29}{LSE-29} and \href{https://ls.st/LSE-30}{LSE-30} as top level image quality allocations.
+This team follows these definitions when defining success but will also suggest mechanisms to possibly exceed requirements.
 
 \section{Scope and Deliverables}
 
 This effort will extend from the construction phase of the Rubin observatory through the end of commissioning.
-It is expected that an interest in improving image quality will remain through the end of the survey, however, the structure of the group will be revisted upon the transition to operations.
-The framework for this process entails producing a budget that quantifies the various contributions to image degradations, including:
+It is expected that an interest in improving image quality will remain through the end of the survey, however, the structure of the team will be revisted upon the transition to operations.
+The framework for this process entails augmenting and maintaining the \href{https://ls.st/Document-17258}{error budget} that quantifies the various contributions to image degradations, including:
 \begin{itemize}
 \item upper atmosphere seeing,
 \item ground layer seeing,
 \item mirror and dome seeing,
-\item residual aberrations in the optical system, arising from misalignments and figure errors,
+\item residual aberrations in the optical system, arising from mis-alignments and figure errors,
 \item both low-angle scattering and undesired reflections off optical elements,
 \item tracking errors and oscillations in the telescope control system, and
 \item detector and signal chain artifacts.\footnote{See \ref{sec:out_of_scope} for further details}
@@ -89,7 +90,7 @@ Specific deliverables include:
 \item Developing and updating a version controlled image quality budget for the Auxiliary Telescope, with associated data collection and analysis methods.
 \item Prototyping and deploying seeing monitoring instrumentation in the Auxiliary Telescope,
 \item Developing, documenting, and archiving analysis tools for image quality assessments,
-\item Migrating the methods, tools, and personnel of the Image Quality Group to the main Rubin telescope once it enters the system integration phase,
+\item Migrating the methods, tools, and personnel of the Image Quality Team to the main Rubin telescope once it enters the system integration phase,
 \item Updating the image quality budget for the Rubin Telescope, based on current measurements and analysis methods.
     Updates to the version controlled budget will be linked to published technotes or studies.
 \item Deploying seeing monitoring instrumentation in the Rubin Telescope,
@@ -100,38 +101,31 @@ Specific deliverables include:
 
 \section{Timeline and Management Structure}
 
-The group's initial focus will be on determining a more detailed image quality budget for the Auxiliary telescope.
+The team's initial focus will be on determining a more detailed image quality budget for the Auxiliary telescope.
 This will contribute to improving the data quality from AuxTel and provide an opportunity to have a toolkit of validated methods at the ready once the main Rubin telescope begins early data collection.
 While predicting dates is a challenge given the uncertainties surrounding COVID, the work on Aux Tel will likely occupy mid-calendar-2021 through some time in 2022 when SITCOM activities ramp up on the main telescope.
 
 A target date for obtaining an initial Aux Tel image quality budget is Dec 2021, with the installation of additional in-dome instrumentation in Jan 2022.
 
-The Image Quality Group's work will be coordinated and guided by the group Chair (TBD).
+The Image Quality team's work will be coordinated and guided by the team Chair (TBD).
 That individual will report to the SIT-Com Leadership Team throughout the commissioning phase of the project.
-The group Chair or their designate will coordinate the image quality work undertaken by in-kind contributors.
+Brian Stalder is the liaison between the SCLT and the IQ Team and will work with the lead to communicate findings and priorities both to and from the team.
+The team Chair or their designate will coordinate the image quality work undertaken by in-kind contributors.
 
 \section{Out-of-Scope Aspects}
 \label{sec:out_of_scope}
 
-The image quality group bears responsibility for identifying and ranking sources of PSF degradation, and recommending steps the project can take to address them.
-The working group is not responsible for fully scoping and carrying out that work; this is the responsibility of the SIT-Com Leads.
+The image quality team bears responsibility for identifying and ranking sources of PSF degradation, and recommending steps the project can take to address them.
+The team is not responsible for fully scoping and carrying out that work; this is the responsibility of the SIT-Com Leads.
 These recommendations can include fixes, upgrades, operational changes, monitoring and visualization tools, additional instrumentation and concerns requiring further studies or analyses.
-This group is not tasked with correction of detector artifacts and/or signal chain artifacts but merely addresses their impact against the fundamental metrics of image quality.
+This team is not tasked with correction of detector artifacts and/or signal chain artifacts but merely addresses their impact against the fundamental metrics of image quality.
 
 \section{Participants}
 \label{sec:participants}
 
 \begin{itemize}
-\item Chuck Claver, Rubin System Scientist
-\item Erik Dennihy, Rubin Commissioning Scientist
-\item Brodi Elwood, Harvard
-\item Merlin Fisher-Levine, Rubin Data Management whiz
-\item Patrick Ingraham, Rubin Calibration System Engineer
-\item Eske Pedersen, Harvard
-\item Brian Stalder, Rubin Commissioning Scientist
-\item Christopher Stubbs, Harvard
-\item Tony Tyson, UC Davis
-\item Elana Urbach, Harvard
+\item Brian Stalder, SCLT Liaison and Rubin Commissioning Scientist
+\item TBR
 \end{itemize}
 
 
@@ -147,9 +141,6 @@ This group is not tasked with correction of detector artifacts and/or signal cha
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
-
 
 
 \end{document}
